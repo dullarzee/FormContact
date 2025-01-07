@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="contactCSS.css" rel="stylesheet">
+  <script defer src="contact.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Contact form</title>
+
+</head>
+<body>
+
+  <main>
+    <fieldset>
+      <legend><h1>Contact Us</h1></legend>
+      <form>
+        <section class="section1">
+        <label for="firstName">First Name *</label><br>
+        <input aria-describedby="firstNameError" id="firstName" type="text" required>
+        <span id="firstNameError"></span>
+        </section>
+
+        <section class="section2">
+        <label for="lastName">Last Name *</label><br>
+        <input aria-describedby="lastNameError" id="lastName" type="text" required>
+        <span id="lastNameError"></span>
+        </section>
+
+        <section class="section3">
+          <label for="email">Email Address *</label><br>
+          <input aria-describedby="errorEmail" id="email" type="text" required>
+          <span id="errorEmail"></span>
+        </section>
+
+       
+      
+      </form>
+    </fieldset>
+
+    <fieldset class="secondField">
+      <legend>Query Type *</legend>
+      <div class="div1">
+      <input aria-describedby="radioError" id="radio1" type="radio">
+      <label id="radioLabel" for="radio1">General Inquiry</label>
+      </div>
+
+      <div class="div1">
+        <input aria-describedby="radioError" id="radio2" type="radio">
+        <label id="radioLabel" for="radio2">Support Request</label>
+       </div>
+      </fieldset>
+      <span id="radioError"></span>
+      
+
+    <div class="div3">
+      <label for="message">Message *</label><br>
+      <textarea id="message" type="text"></textarea><br>
+      <span id="messageError"></span>
+    </div>
+    <div style=" position:relative">
+    <label><input id="checkBox" type="checkbox">I consent to being contacted by the team *</label>
+    </div>
+    <span id="consentError"></span>
+
+    <button>Submit</button>
+  </main>
+
+  <div class="successDiv">
+    <h3><img alt="" id="successMessage" src="assets/images/icon-success-check.svg">Message sent!</h3>
+    <p style="font-size:0.9em">Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Dullarzee</a>.
+  </div>
+</body>
+</html>
