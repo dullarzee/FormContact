@@ -146,6 +146,12 @@ input[type="radio"]{
     top:15%;
     left:10%;
 }
+#radioLabel2{
+    position:relative;
+    top:15%;
+    left:10%;
+
+}
 
 button{
     margin-left:3%;

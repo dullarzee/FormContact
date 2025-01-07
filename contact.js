@@ -84,7 +84,14 @@ const submitValidation = ()=>{
     
 }
 
-
+function helpTab(e)
+{
+    if(e.key === 'Tab')
+    {
+        e.preventDefault();
+        radio2.focus();
+    }
+}
 
 function checkRadio2(e)
 {
@@ -142,6 +149,8 @@ lastName.addEventListener('keyup', parseName);
 message.addEventListener('keyup', parseName);
 Email.addEventListener('keyup',parseEmail);
 
+
 radio1.addEventListener('click', checkRadio);
+radio1.addEventListener ('keydown', helpTab);
 radio2.addEventListener('click', checkRadio2);
 submit.addEventListener('click', submitValidation);
